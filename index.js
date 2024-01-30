@@ -44,4 +44,4 @@ const servidor =  createServer((peticion,respuesta) => {
     }
 }); 
 
-servidor.listen(3000);
+servidor.listen(process.env.PORT || 3000); // SI LO USAMOS EN LOCAL VA A USAR EL PUERTO 3000 PERO CUANDO LO SUVAMOS A RENDER BUSCARA EL PUERTO QUE NOS OFREDE Y COLOCA EL QUE NOS DA
